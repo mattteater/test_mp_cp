@@ -1,8 +1,23 @@
-def main():
-    print('testing git windows.')
-    return
+# def main():
+#     print('testing git windows.')
+#     return
 
-def next():
-    print('for git commit bug')
+# def next():
+#     print('for git commit bug')
 
-main()
+# main()
+
+# Useful Refs.
+
+# ** JS **
+
+# var arr = [ {"id":"10", "class": "child-of-9"}, {"id":"11", "class": "child-of-10"}];
+    
+# for (var i = 0; i < arr.length; i++){
+#   document.write("<br><br>array index: " + i);
+#   var obj = arr[i];
+#   for (var key in obj){
+#     var value = obj[key];
+#     document.write("<br> - " + key + ": " + value);
+#   }
+# }
