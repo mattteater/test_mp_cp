@@ -1,13 +1,13 @@
-## Todo List - PyThon Devs Documentation.
+# Todo List - PyThon Devs Documentation.
+Authors : MADDBeeF!
 
-The logic flow of the the todolist.py application is based on a tasks.json file. This file can be generated if there is no pre-existing file. The json files stores TaskObjects that, as of now, are pretty basic, but allow for easy scaling of more attributes and complex data structures in our program. 
+## About 
+A simple To-Do List Management application written using Python. Users are able to view, compelte, add, and delete to-do tasks directly from the terminal.
 
-Control flow of program:
-    validate file_name
-        if file exists
-            break
-        else
-            create new tasks.json file
+## Design
+The programs logic flow follows a top down approach where the main() function exist at the highest level. The primary control logic takes place within the main() function and uses various 'helper' functions to manage the to-do list. To keep data 
+a .json file was used to store an array of task objects, with a name attribute (as string) and a completed attribute (as bool).
+
     
 
 
