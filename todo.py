@@ -31,7 +31,12 @@ def main():
         return print('Type Error Occured')  
     finally:
         print('Exiting Program.')
-    
+
+'''NOTE: About popoulate_task_list.
+if file is found -> populates list with the data from file
+if not found -> initialize a new file empty json with the given name
+after either of these, the docuement is loaded and stored in a list variable that is returned to the main() function
+'''
 def populate_task_list():
     file_name = './Tasks.json'
     if os.path.exists(file_name):
@@ -41,11 +46,17 @@ def populate_task_list():
             except json.JSONDecodeError:
                 # Handle the case where the file is empty or not valid JSON
                 doc = []
-    return doc if isinstance(doc, list) else [{}]
+        return doc
+    else:
+        with open(file_name, 'w') as create_empty_json:
+            empty_list = []
+            json.dump(empty_list, create_empty_json)
+            doc = []
+        return doc
 
 def display(action, task_list):
     if action == 'MENU':
-        print('\n1. See Current List.\n2: Add\n3: Remove\n4: Press any other key to exit.\n')
+        print('\n1. See Current List.\n2: Add\n3: Remove\n4: Press any other key to exit.')
     elif action == 'LIST_WITHOUT_NUM':
         print("\n*** TODO LIST ***\n")
         for item in task_list:
