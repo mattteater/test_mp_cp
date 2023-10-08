@@ -1,5 +1,6 @@
 # Todo List - PyThon Devs Documentation.
-Authors : MADDBeeF!
+## Authors
+MADDBeeF!
 
 ## About 
 A simple To-Do List Management application written using Python. Users are able to view, compelte, add, and delete to-do tasks directly from the terminal.
