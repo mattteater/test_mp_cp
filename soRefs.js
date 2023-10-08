@@ -9,3 +9,6 @@ for (var i = 0; i < arr.length; i++){
     document.write("<br> - " + key + ": " + value);
   }
 }
+
+// JSON IN JS
+// https://devqa.io/json-tutorial-how-to-use-json-in-javascript/
