@@ -79,6 +79,15 @@ def remove_task(task_list):
     index_number = int(input('Select the item to remove: '))
     task_list.pop(index_number - 1)  # Remove the task from the list
 
-#TODO : Mark as Done.
+'''TODO Implement: 
+    mark_done()
+'''
+
+'''NOTE Pos. Features: 
+    edit_task()
+    view_in_web()
+    task_duration()
+'''
+
 
 main()
